@@ -1,7 +1,8 @@
 import axios from 'axios';
 
-const apiUrl = "http://localhost:5290";
-axios.defaults.baseURL = "http://localhost:5290";
+// const apiUrl = process.env.REACT_APP_API_URL;
+// const apiUrl = "http://localhost:5290";
+axios.defaults.baseURL = process.env.REACT_APP_API_URL;
 // axios.defaults.headers.common['Authorization'] = AUTH_TOKEN;
 axios.defaults.headers.post['Content-Type'] = 'application/json';
 
