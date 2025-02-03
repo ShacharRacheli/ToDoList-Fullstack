@@ -40,8 +40,6 @@ export default {
   deleteTask: async (id) => {
     const result = await axios.delete(`/items/${id}`)
     // const result = await axios.delete(`${apiUrl}/items/${id}`)
-
     console.log('deleteTask')
-    return result.data;
   }
 };
